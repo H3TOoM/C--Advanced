@@ -8,7 +8,7 @@ namespace C__Advanced
 {
     public static class StringExtentions
     {
-       public static bool IsValidEmail( this string email )
+        public static bool IsValidEmail( this string email )
         {
             // A very basic email validation for demonstration purposes
             return email.Contains( "@" ) && email.Contains( "." );
