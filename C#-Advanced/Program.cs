@@ -93,3 +93,68 @@
 //CalculateDirectorySize( startPath, ref totalSize );
 //Console.WriteLine( $"Total size of directory '{startPath}' is {totalSize} bytes." );
 #endregion
+
+
+#region Delegates
+//namespace C__Advanced
+//{
+
+
+//    internal class Program
+//    {
+//        delegate int MathOperation( int a, int b );
+//        static void PerformOperation( int a, int b, MathOperation operation )
+//        {
+//            int result = operation( a, b );
+//            Console.WriteLine( $"Result: {result}" );
+//        }
+//        static void Main( string[] args )
+//        {
+//            PerformOperation( 10, 5, ( x, y ) => x + y ); // Addition // Lambda Expression
+//            PerformOperation( 10, 5, ( x, y ) => x - y ); // Subtraction
+//            PerformOperation( 10, 5, ( x, y ) => x * y ); // Multiplication
+//            PerformOperation( 10, 5, ( x, y ) => x / y ); // Division
+//        }
+//    }
+//}
+
+
+//namespace C__Advanced
+//{
+//    public class Program
+//    {
+
+//        delegate bool ShouldCalculate( Employee emp );
+
+//        public class Employee
+//        {
+//            public string Name { get; set; }
+//            public decimal Salary { get; set; }
+//            public int Bonus { get; set; }
+//        }
+//        public static void Main( string[] args )
+//        {
+//            List<Employee> employees = new List<Employee>
+//            {
+//                new Employee { Name = "Alice", Salary = 60000, Bonus = 5000 },
+//                new Employee { Name = "Bob", Salary = 45000, Bonus = 3000 },
+//                new Employee { Name = "Charlie", Salary = 70000, Bonus = 7000 },
+//            };
+
+//            CalcSalary( employees, emp => emp.Salary < 50000 );
+//        }
+
+//        private static void CalcSalary( List<Employee> employees, ShouldCalculate predicate )
+//        {
+//            foreach (var emp in employees)
+//            {
+//                if (!predicate( emp ))
+//                    continue;
+//                decimal totalCompensation = emp.Salary + emp.Bonus;
+//                Console.WriteLine( $"{emp.Name}'s Total Compensation: {totalCompensation}" );
+//            }
+//        }
+//    }
+//}
+
+#endregion
